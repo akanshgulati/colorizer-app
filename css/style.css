@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+@media(min-width: 600px)
+{
 body
 {
     background: #79540d;
@@ -93,4 +95,5 @@ div[class*='color-tab']
     display: none;
     z-index: 1000;
 
+}
 }
