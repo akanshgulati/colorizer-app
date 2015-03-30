@@ -3,40 +3,43 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Color-Chooser</title>
+    <title>Colorizer: Interactive Color Selection</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png"   href="./favicon.ico">
+      <meta name="description" content="Colorizer is an interactive of choosing colours where one can choose color vividly by dragging mouse on the screen and clicking on the colour to get its hexcode." />
+      <meta name="twitter:card" value="summary">
+      <meta property="og:title" content="Colorizer: Interactive Color Selection" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="http://colorizer.akansh.com/" />
+      <meta property="og:image" content="http://colorizer.akansh.com/favicon.ico" />
+      <meta property="og:description" content="With Colorizer, just move your mouse on screen and click on the colour you like to save it in palette ." />
     <script src="js/vendor/modernizr.js"></script>
-
   </head>
   <body>
 
+     <div class="info mobile small-text-center show-for-medium-down">
+          Colorize <br>
+          <span class="subtitle ">Interactive way to choose color</span><br>
+          <span class="warning">This application is not mobile compatible.</span>
+      </div>
+
+  <div class="show-for-large-only">
     <div id="canvas">
         <div id="pos"></div>
     </div>
 
-    <!--<div id="hexcode" style="position: absolute; bottom: 10px;"></div>
-    <div id="rgb" style="position: absolute; bottom: 10px; right: 10px;">-->
-
-
     <div class="row fullwidth color" id="color-swatch">
         <div class="info">
-            Colorize
+            Colorizer
             <span class="subtitle">Interactive way to choose color</span>
         </div>
         <div id="color-tray">
             <div class="columns small-1 last"></div>
         </div>
         <a id="closeall" title="Clear All Swatches"></a>
-        <!--        <div class="columns small-1 color-tab">#011029 <div class="close"></div>
-                </div>
-                <div class="columns small-1 color-tab"></div>
-                <div class="columns small-1 color-tab"></div>
-                <div class="columns small-1 color-tab"></div>
-                <div class="columns small-1 color-tab"></div>
-        -->
     </div>
-
+</div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
