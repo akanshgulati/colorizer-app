@@ -3,9 +3,14 @@ $(document).ready(function () {
     var w, h, d, xdivider, ydivider, zdivider;
     var r, g, b, color, swatch_counter = 1;
     var canvas = $("#canvas");
+    var pos= $("#pos");
+    var color_a= $("#color");
+    var rgb_a= $("#rgb");
+    var container=$("#container");
     w = canvas.width(); //finding the width of screen
     h = canvas.height();//finding the height of screen
-    d = Math.sqrt(Math.pow(w, 2) + Math.pow(h, 2)) / 2;//finding the diagonal length of screen
+    d = Math.sqrt(Math.pow(w, 2) + Math.pow(h, 2));//finding the diagonal length of screen
+   // pos.html("Width="+w+" Height="+h+" Diagonal="+d);
     xdivider = (w / 255); //dividing whole width into 255 points.
     ydivider = h / 255;     //diving whole height into 255 points
     zdivider = d / 255; // diving the diagonal length into 255 points
@@ -26,6 +31,7 @@ $(document).ready(function () {
         g = ytemp > 255 ? (255 - ytemp) + 255 : ytemp;
         var ztemp = parseInt(z / zdivider);
         b = ztemp > 255 ? (255 - ztemp) + 255 : ztemp;
+        //rgb_a.html("R="+r+"G="+g+"B="+b);
         r = r.toString(16);// Forming the hexadecimal
         g = g.toString(16);
         b = b.toString(16);
@@ -38,8 +44,9 @@ $(document).ready(function () {
         if (g.length < 2) {
             g = "0" + g;
         }
-        color = "#" + r + g + b;
-        canvas.css("background-color", color);
+        color = "#" + r + g +b;
+        //color_a.html(" Color="+color);
+        container.css("background-color", color);
     });
     var max = 0;
     var i = -1;
