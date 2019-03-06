@@ -1,5 +1,4 @@
-# Colorizer
-#####http://colorizer.akansh.com
+# Colorizer http://colorizer.akansh.com
 This application is made for the designers and developers who face issue in choosing the right color. The main aim of this application is to help them scroll the whole spectrum of screen and instantly click to save it and get the hexcode of that perticular color.
 ### Color-Spectrum
 The whole screen is divided into various colors on the bases of the window width and height.
